@@ -1,0 +1,13 @@
+{
+  "name": "healthcare-dx-cs-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 기반 보건의료·헬스케어 DX CS 실무 과정 랜딩페이지",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
