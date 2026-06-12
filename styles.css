@@ -52,6 +52,12 @@
 .prompt-grid{max-width:960px}
 .material-card,.tool-grid article,.prompt-card,.flow-grid article,.card.emphasis{text-align:center;align-items:center}
 .prompt-card{text-align:left;align-items:stretch}
+.prompt-group-grid{grid-template-columns:1fr;max-width:900px}
+.prompt-group-card{padding:26px;border-radius:28px}
+.prompt-group-card span{align-self:center;font-size:13px;padding:8px 14px}
+.prompt-group-card h3{text-align:center;font-size:22px;margin-bottom:4px}
+.prompt-group-card pre{max-height:520px;min-height:260px;padding:18px;font-size:14px;line-height:1.72}
+.prompt-group-card .copyPrompt{align-self:center;min-width:180px;border-radius:999px}
 .tool-grid article,.resource-grid article{min-height:150px;display:flex;flex-direction:column;justify-content:center;text-align:center}
 .flow-grid article{display:flex;flex-direction:column;align-items:center}
 .flow-grid article:nth-child(4){grid-column:2 / span 2}
