@@ -84,7 +84,7 @@
 
     <section id="materials" class="section materials">
       <div class="section-title"><p class="eyebrow">Materials</p><h2>강의자료 다운로드</h2><p>첨부해주신 77쪽 수정본 PDF를 랜딩페이지에서 바로 볼 수 있도록 연결했습니다.</p></div>
-      <div class="material-grid"><article class="material-card"><div class="material-icon">PDF</div><h3>슬라이드 보기</h3><p>브라우저에서 전체 강의 슬라이드를 바로 확인합니다.</p><a class="button primary" href="cs-slides.html" target="_blank" rel="noopener">슬라이드 보기</a></article><article class="material-card"><div class="material-icon alt">↓</div><h3>강의자료 다운로드</h3><p>고객응대·민원처리 AI 실무 활용 PDF 원본 자료를 내려받습니다.</p><a class="button primary" href="assets/materials/healthcare-cs-ai-slides.pdf" download>PDF 다운로드</a></article></div>
+      <div class="material-grid"><article class="material-card"><div class="material-icon">PDF</div><h3>슬라이드 보기</h3><p>브라우저에서 전체 강의 슬라이드를 바로 확인합니다.</p><a class="button primary" href="cs-slides.html" target="_blank" rel="noopener">슬라이드 보기</a></article><article class="material-card"><div class="material-icon alt">↓</div><h3>강의자료 다운로드</h3><p>고객응대·민원처리 AI 실무 활용 PDF 원본 자료를 내려받습니다.</p><a class="button primary" href="assets/materials/healthcare-cs-ai-slides.pdf" download>PDF 다운로드</a></article><article class="material-card"><div class="material-icon prompt">TXT</div><h3>실습 프롬프트 다운로드</h3><p>1차시부터 5차시까지의 실습 프롬프트 txt 파일을 한 번에 내려받습니다.</p><a class="button primary" href="assets/prompts/healthcare-cs-prompt-pack.zip" download>프롬프트 ZIP 다운로드</a></article></div>
     </section>
 
     <section id="tools" class="section tools">
@@ -93,44 +93,167 @@
     </section>
 
     <section id="prompts" class="section prompts">
-      <div class="section-title"><p class="eyebrow">Prompt Library</p><h2>챕터별 실습프롬프트</h2><p>PPT 실습 페이지의 흐름을 기준으로, 수강생이 바로 복사해 실습할 수 있는 핵심 프롬프트를 챕터별 카드로 정리했습니다.</p></div>
+      <div class="section-title"><p class="eyebrow">Prompt Library</p><h2>1차시~5차시 실습 프롬프트</h2><p>고연심AI전문가님이 제공한 차시별 프롬프트 원본을 기준으로 다시 구성했습니다. 카드별 복사도 가능하고, 전체 txt 묶음은 강의자료 섹션에서 ZIP으로 다운로드할 수 있습니다.</p></div>
+      <div class="prompt-downloads">
+        <a href="assets/prompts/01-cs-ai-intro-prompts.txt" download>1차시 TXT</a>
+        <a href="assets/prompts/02-complaint-script-prompts.txt" download>2차시 TXT</a>
+        <a href="assets/prompts/03-consultation-record-prompts.txt" download>3차시 TXT</a>
+        <a href="assets/prompts/04-chatbot-vibecoding-prompts.txt" download>4차시 TXT</a>
+        <a href="assets/prompts/05-action-plan-prompts.txt" download>5차시 TXT</a>
+        <a class="all" href="assets/prompts/healthcare-cs-prompt-pack.zip" download>전체 ZIP</a>
+      </div>
       <div class="prompt-grid">
-        <article class="prompt-card"><span>1차시 · 라이브 시연</span><h3>30초 응대 스크립트</h3><pre>너는 병원 CS 전담 직원이야.
-진료 대기 2시간으로 화가 난 환자가 접수창구에서 항의하고 있어.
-공감하고 대안을 제시하는 응대 스크립트를 3가지 작성해줘.
+        <article class="prompt-card"><span>1차시 · 1-1</span><h3>라이브 시연 응대 스크립트</h3><pre>너는 병원 CS 전담 직원이야.
+진료 대기 2시간으로 화가 난 환자가
+접수창구에서 항의하고 있어.
+공감하고 대안을 제시하는 응대 스크립트를
+3가지 작성해줘.
 각 3문장 이내, 경어체 사용.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>2차시 · 민원 응대</span><h3>민원 유형별 스크립트</h3><pre>너는 [기관명] 고객서비스 CS 전담 직원이야.
-민원 유형: [대기/수납/의료진 태도/시설/의료행위]
-상황: [예. 진료 대기 2시간으로 화가 난 환자]
-공감 → 수용 → 해결 → 마무리 4단계 구조로 응대 스크립트 3가지를 작성해줘.
+        <article class="prompt-card"><span>1차시 · 1-2</span><h3>개선 요청</h3><pre>더 따뜻하게 바꿔줘</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>1차시 · 1-3</span><h3>프롬프트 4요소 구조</h3><pre>[역할] 너는 병원 CS 전문가야
+[상황] 환자가 대기 시간에 불만을 표현하고 있어
+[요청] 공감하는 응대 스크립트 3가지를 작성해줘
+[형식] 각각 3문장 이내, 경어체 사용</pre><button class="copyPrompt">복사</button></article>
+
+        <article class="prompt-card"><span>2차시 · 2-1</span><h3>기본 응대 스크립트 생성</h3><pre>너는 [기관명] 고객서비스 CS 전담 직원이야.
+[상황: 예 – 진료 대기 2시간으로 화가 난 환자]에게
+공감하고 해결책을 제시하는 응대 스크립트를 3가지 작성해줘.
 각 3문장 이내, 경어체 사용.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>2차시 · 강성민원</span><h3>공감 + 인정 + 해결</h3><pre>역할: 병원 CS 전담 응대 직원
+        <article class="prompt-card"><span>2차시 · 2-2</span><h3>민원 유형별 시나리오</h3><pre>대기 불만:
+병원 CS 담당자로서 진료 2시간 대기로 화가 난 환자에게
+사과와 대안을 제시하는 공감 스크립트 2가지 작성해줘.
+
+의료진 태도:
+환자가 의사의 설명이 너무 짧고 불친절했다고 항의할 때
+CS 직원이 사용할 공감 응대 문구 3가지를 작성해줘.
+
+비용·청구:
+보험 적용이 안 된 의료비에 대해 환자가 재청구를 요청할 때 절차를 안내하는 스크립트를 작성해줘.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>2차시 · 2-3</span><h3>강성민원 공감언어</h3><pre>역할: 병원 CS 전담 응대 직원
 상황: 환자 보호자가 수술 후 설명 부족을 이유로 격한 항의 중
-요청: 공감 + 상황 인정 + 해결 제시 구조로 응대 스크립트 2가지를 작성해줘.
-조건: 각 4문장 이내, 경어체, 단호하지만 공감을 담아줘.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>3차시 · 상담 기록</span><h3>상담 내용 표준 요약</h3><pre>다음 상담 내용을 아래 형식으로 정리해줘.
-- 상담 일시:
+요청: 공감+상황 인정+해결 제시 구조로 응대 스크립트 2가지 작성
+형식: 각 4문장 이내, 경어체
+
+강도 조절 추가 지시:
+단호하지만 공감을 담아 다시 써줘.
+진정시키는 말투로 3문장 이내로 작성해줘.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>2차시 · 2-4</span><h3>기관별 톤앤매너</h3><pre>버전 1 — 대학병원·종합병원:
+방금 만든 대기 민원 응대 스크립트를
+대학병원 공식 어체로 다시 써줘.
+격식체 사용, '의료진과 협의 후 처리'한다는
+내용을 포함하고, 각 3문장 이내로.
+
+버전 2 — 의원·클리닉:
+같은 스크립트를 동네 의원 말투로 다시 써줘.
+따뜻하고 자연스러운 존댓말로,
+짧고 명확하게, 각 2문장 이내로 작성해줘.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>2차시 · 2-5</span><h3>팀 활동 과제</h3><pre>너는 [우리 기관명] CS 전담 직원이야.
+우리 기관에서 자주 발생하는 민원 [민원 유형]에 대해
+공감 → 인정 → 해결 3단계 구조로 응대 스크립트 1가지를 작성해줘.
+경어체, 3문장 이내, [우리 기관 톤: 격식체/친근한 어조] 반영.</pre><button class="copyPrompt">복사</button></article>
+
+        <article class="prompt-card"><span>3차시 · 3-1</span><h3>기본 상담 요약</h3><pre>다음 상담 내용을 아래 형식으로 정리해줘:
+- 상담 일시: [날짜]
+- 민원 유형: [유형]
+- 고객 요청사항: [요약]
+- 처리 내용: [요약]
+- 후속 조치: [내용]
+
+[상담 내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>3차시 · 3-2</span><h3>감정 분석 포함 요약</h3><pre>다음 상담을 요약하되, 고객의 감정 상태(불만/분노/슬픔/일반)와
+응대 만족도 예측(낮음/보통/높음)도 포함해줘.
+
+[상담 내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>3차시 · 3-3</span><h3>가상 상담 사례 AI 요약</h3><pre>다음 상담 내용을 아래 형식으로 정리해줘:
 - 민원 유형:
 - 고객 요청사항:
 - 처리 내용:
 - 후속 조치:
+
+보호자 A: 어머니가 오전 9시에 혈액검사를 받았는데 오후 3시가 되도록 결과 설명이 없어요. 4시간 넘게 기다리는 게 말이 되나요?
+직원: 많이 기다리셨지요, 죄송합니다. 확인해 보니 결과는 나왔는데 담당 교수님 외래가 지연되어 설명이 늦어지고 있습니다.
+보호자 A: 그럼 미리 알려주셨어야죠. 설마 내일 다시 와야 하나요?
+직원: 30분 안에 설명이 가능하도록 조치하고, 지연될 경우 휴대전화로 먼저 안내드리겠습니다.
+
+개선 요청: 더 간결하게 정리해줘.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>3차시 · 3-4</span><h3>NotebookLM FAQ 자동 생성</h3><pre>이 자료를 바탕으로 자주 묻는 질문 TOP 10과 답변을 작성해줘.
+
+간단 버전(ChatGPT 활용):
+다음 민원 사례 3건을 바탕으로 환자용 FAQ 5개로 작성해줘.
+
+[민원 사례 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>3차시 · 3-5</span><h3>민원 처리 결과 보고서</h3><pre>다음 상담 내용을 [기관명] 민원처리 결과 보고서 양식에 맞게 정리해줘.
+항목: 접수일시/민원유형/요청내용/처리내용/후속조치/담당자
+
 [상담 내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>3차시 · 보고서</span><h3>민원처리 결과 보고서</h3><pre>다음 상담 내용을 [기관명] 민원처리 결과 보고서 양식에 맞게 정리해줘.
-항목: 접수일시 / 민원유형 / 요청내용 / 처리내용 / 후속조치 / 담당자
-개인정보가 포함되어 있으면 익명화해서 표시해줘.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>4차시 · GPTs</span><h3>CS 챗봇 Instructions</h3><pre>너는 [기관명]의 고객서비스(CS) 전담 AI 어시스턴트야.
+        <article class="prompt-card"><span>3차시 · 3-6</span><h3>반복 민원 패턴 분석</h3><pre>다음 민원 기록 10건을 분석해서
+① 가장 자주 발생하는 민원 유형 TOP 3
+② 반복 발생 원인
+③ 재발 방지를 위한 개선 제안 2가지
+를 표로 정리해줘.
+
+[익명화된 민원 기록 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+
+        <article class="prompt-card"><span>4차시 · 4-1</span><h3>GPTs Instructions 기본형</h3><pre>너는 [기관명]의 고객서비스(CS) 전담 AI 어시스턴트야.
 방문 고객·환자·보호자의 민원·문의에 친절하고 정확하게 답변해줘.
-항상 경어체를 사용하고, 모르는 내용은 담당자 연결을 안내해.
+항상 경어체를 사용하고, 모르는 내용은 '담당자 연결'을 안내해.
 개인정보·의료 판단·비방 내용에는 답변하지 마.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>4차시 · 바이브코딩</span><h3>민원 접수 폼 만들기</h3><pre>병원 CS 민원 접수 폼을 만들어줘.
+        <article class="prompt-card"><span>4차시 · 4-2</span><h3>Instructions 핵심 5요소</h3><pre>[역할] 당신은 ○○병원 CS 안내 챗봇입니다.
+[응대 규칙] 항상 공손한 경어체로, 3문장 이내로 답변합니다.
+[답변 범위] 원무·민원·진료 안내·시설 안내만 답변합니다.
+[금지 사항] 증상 진단·처방·법적 판단은 절대 하지 않습니다.
+[Fallback] 모르는 질문에는 "정확한 안내를 위해 담당자(대표번호)를 연결해 드리겠습니다"라고 답합니다.
+[개인정보] 이름·생년월일·진료기록 등 개인정보는 절대 수집·저장하지 않으며, 요청 시 담당자 연결을 안내합니다.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>4차시 · 4-3</span><h3>Q&A 지식 데이터 생성</h3><pre>병원 CS 챗봇에 업로드할 FAQ Q&A 10개를 만들어줘.
+카테고리: 예약·접수 / 수납·보험 / 주차 / 검사 / 입원·퇴원
+형식: Q. 질문 / A. 답변 (각 답변 2문장 이내, 경어체)
+주의: 가상의 일반적인 병원 기준으로 작성하고 실제 병원명·개인정보 포함 금지.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>4차시 · 4-4</span><h3>바이브코딩 민원 접수 폼</h3><pre>병원 CS 민원 접수 폼을 만들어줘.
+
 포함할 항목:
-- 민원 유형 선택(대기/수납/태도/시설/기타)
-- 내용 입력(텍스트 박스)
+- 민원 유형 선택 (대기/수납/태도/시설/기타)
+- 내용 입력 (텍스트 박스)
 - 제출 버튼
+
 디자인: 흰 배경, 파란 버튼, 깔끔하게
-HTML 파일로 바로 쓸 수 있게 만들어줘.</pre><button class="copyPrompt">복사</button></article>
-        <article class="prompt-card"><span>5차시 · Action Plan</span><h3>현장 적용 계획</h3><pre>우리 기관의 CS 업무에 AI를 적용하기 위한 3개월 Action Plan을 작성해줘.
-포함: SMART 목표 1가지, 현업 문제와 이유, 사용할 AI 도구와 프로세스, 월별 실행 일정, KPI, 개인정보 보호 기준, 예상 리스크.</pre><button class="copyPrompt">복사</button></article>
+HTML 파일로 바로 쓸 수 있게 만들어줘</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>4차시 · 4-5</span><h3>바이브코딩 개선 요청</h3><pre>색상을 병원 분위기에 맞게 바꿔줘
+접수 날짜·시간 항목도 추가해줘
+제출 후 감사 메시지가 뜨게 해줘</pre><button class="copyPrompt">복사</button></article>
+
+        <article class="prompt-card"><span>5차시 · 5-1</span><h3>민원 유형 자동 분류</h3><pre>다음 민원 내용을 읽고
+① 민원 유형(대기/수납/태도/시설/의료행위/기타),
+② 긴급도(즉시/우선/일반), ③ 권장 응대 방향을 한 줄씩 분류해줘.
+
+[민원 내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>5차시 · 5-2</span><h3>감성 분석 + 응대 전략</h3><pre>다음 민원 내용의 고객 감정 상태(분노/불만/슬픔/일반)를 분석하고
+적절한 응대 전략을 제안해줘.
+
+[민원 내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>5차시 · 5-3</span><h3>팀 발표 자료 준비</h3><pre>우리 팀이 선정한 민원 사례는 [민원 1건 설명]이야.
+오늘 배운 AI 도구(ChatGPT, Claude, 클로바Note, NotebookLM, GPTs) 중
+3가지를 적용한 해결 시나리오를
+문제 → AI 적용 → 결과 → 개선점 구조로
+3분 발표용 개요로 정리해줘.</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>5차시 · 5-4</span><h3>Action Plan 작성</h3><pre>나는 [병원/기관] CS 담당자야. 오늘 AI 교육에서
+ChatGPT 스크립트 생성, 클로바Note 기록, NotebookLM FAQ, GPTs 챗봇을 배웠어.
+이 도구들을 활용한 3개월 Action Plan 초안을 작성해줘.
+구성: ① 목표(SMART 1가지) ② 이유 ③ 방법(도구·프로세스)
+④ 월차별 일정 ⑤ 측정 가능한 KPI</pre><button class="copyPrompt">복사</button></article>
+        <article class="prompt-card"><span>5차시 · 5-5</span><h3>CS 업무용 실전 프롬프트 5종</h3><pre>민원 스크립트:
+병원 CS 담당자로서 [상황]에 처한 환자에게 공감+대안 제시 스크립트 3가지 작성. 경어체, 3문장 이내.
+
+상담 요약:
+다음 상담 내용을 '민원유형/요청사항/처리내용/후속조치' 형식으로 3~5줄 요약해줘: [내용 붙여넣기]
+
+FAQ 생성:
+다음 자료를 기반으로 고객이 자주 묻는 질문 TOP 10과 간결한 답변을 작성해줘: [자료 붙여넣기]
+
+이메일 초안:
+[수신자]에게 [목적]을 전달하는 공식 이메일 초안 작성. 정중한 어체, 핵심 3가지 포함.
+
+보고서 초안:
+다음 민원 처리 내용을 기관 보고서 형식으로 정리해줘. 항목: 접수일시/유형/내용/처리/후속 [내용 붙여넣기]</pre><button class="copyPrompt">복사</button></article>
       </div>
     </section>
 
