@@ -13,6 +13,22 @@
 .resources{background:#fff}.resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.resource-grid h3{margin:0 0 10px;color:var(--blue)}
 .cta{margin:32px clamp(20px,7vw,78px) 60px;padding:52px 26px;text-align:center;border-radius:40px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-2),#0ea5e9);box-shadow:var(--shadow)}.cta h2{max-width:860px;margin:0 auto 18px}.cta p:not(.eyebrow){max-width:700px;margin:0 auto 32px;color:#eef4ff;font-size:18px}footer{padding:34px;text-align:center;color:var(--muted);background:#fff;border-top:1px solid var(--line)}
 
+/* Compact centered hero refinement */
+.hero{padding-left:clamp(22px,8vw,110px);padding-right:clamp(22px,8vw,110px);text-align:center}
+.hero-content{max-width:1040px;margin-left:auto;margin-right:auto}
+.landing-hero-grid{grid-template-columns:minmax(0,1fr);gap:30px;justify-items:center}
+.landing-hero-grid>div:first-child{max-width:820px;margin-left:auto;margin-right:auto}
+.hero h1,.lead{margin-left:auto;margin-right:auto}
+.hero-actions,.stats{justify-content:center}
+.slide-preview{width:min(560px,100%);margin-left:auto;margin-right:auto}
+.hero .button{min-height:48px;padding:0 22px;border-radius:16px;gap:8px;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.hero .button.primary{background:#fff;color:var(--primary);border:1px solid rgba(255,255,255,.78)}
+.hero .button.secondary{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.38);color:#fff}
+.hero .button.primary::before{content:"📚"}
+.hero .button.secondary::before{content:"📥"}
+.hero .button:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(0,0,0,.24)}
+.hero .dashboard-card{display:none}
+
 /* Centered content layout inspired by compact course hub pages */
 .section > .section-title{margin-left:auto;margin-right:auto;text-align:center}
 .section > .section-title.narrow{max-width:760px}
