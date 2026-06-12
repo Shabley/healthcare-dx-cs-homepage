@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>고객응대·민원처리 AI 실무 활용 슬라이드</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:'Noto Sans KR',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#0b1020;color:#fff}.bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(14px,3vw,32px);background:linear-gradient(135deg,#4a148c,#0f548f);border-bottom:1px solid rgba(255,255,255,.16)}.brand{font-weight:900;letter-spacing:-.04em;font-size:15px}.actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}a{color:inherit;text-decoration:none}.btn,button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:#fff;color:#4a148c;font-weight:900;cursor:pointer}.btn.ghost,button.ghost{background:rgba(255,255,255,.12);color:#fff}.btn:disabled,button:disabled{opacity:.45;cursor:not-allowed}.pageBox{display:flex;align-items:center;gap:7px;padding:0 10px;min-height:38px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);font-weight:800}.pageBox input{width:54px;height:28px;border:0;border-radius:10px;text-align:center;font-weight:900;color:#111}.viewer{min-height:calc(100vh - 63px);padding:20px;display:flex;align-items:center;justify-content:center}.canvasWrap{width:min(100%,1120px);min-height:60vh;display:flex;align-items:center;justify-content:center}.slideCanvas{max-width:100%;height:auto;background:#fff;border-radius:14px;box-shadow:0 30px 90px rgba(0,0,0,.45)}.loading{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:14px 18px;border-radius:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px);font-weight:900}.hint{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);font-size:13px;color:#cbd5e1;background:rgba(0,0,0,.35);padding:8px 12px;border-radius:999px}@media(max-width:760px){.bar{align-items:flex-start;flex-direction:column}.viewer{min-height:calc(100vh - 118px);padding:10px}.actions{width:100%}.btn,button{min-height:36px;padding:0 11px;font-size:13px}.pageBox{font-size:13px}.hint{display:none}}
+    *{box-sizing:border-box}body{margin:0;font-family:'Noto Sans KR',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#0b1020;color:#fff}.bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px clamp(14px,3vw,30px);background:linear-gradient(135deg,#4a148c,#0f548f);border-bottom:1px solid rgba(255,255,255,.16)}.brand{font-weight:900;letter-spacing:-.04em;font-size:15px}.actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}a{color:inherit;text-decoration:none}.btn,button{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 13px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:#fff;color:#4a148c;font-weight:900;cursor:pointer;font-size:13px}.btn.ghost,button.ghost{background:rgba(255,255,255,.12);color:#fff}.btn:disabled,button:disabled{opacity:.45;cursor:not-allowed}.pageBox{display:flex;align-items:center;gap:7px;padding:0 10px;min-height:36px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);font-weight:800;font-size:13px}.pageBox input{width:54px;height:27px;border:0;border-radius:10px;text-align:center;font-weight:900;color:#111}.viewer{min-height:calc(100vh - 59px);padding:18px;display:flex;align-items:center;justify-content:center}.slideFrame{width:min(100%,1120px);display:flex;align-items:center;justify-content:center}.slideImage{display:block;max-width:100%;max-height:calc(100vh - 104px);height:auto;background:#fff;border-radius:13px;box-shadow:0 30px 90px rgba(0,0,0,.45)}.loading{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 16px;border-radius:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px);font-weight:900}.hint{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);font-size:12px;color:#cbd5e1;background:rgba(0,0,0,.35);padding:7px 11px;border-radius:999px}@media(max-width:760px){.bar{align-items:flex-start;flex-direction:column}.viewer{min-height:calc(100vh - 112px);padding:8px}.actions{width:100%}.btn,button{min-height:34px;padding:0 10px;font-size:12px}.pageBox{font-size:12px}.slideImage{max-height:calc(100vh - 150px);border-radius:10px}.hint{display:none}}
   </style>
 </head>
 <body>
@@ -14,69 +14,45 @@
     <div class="actions">
       <a class="btn ghost" href="./">랜딩페이지</a>
       <button id="prevBtn" class="ghost" type="button">← 이전</button>
-      <div class="pageBox"><input id="pageInput" type="number" min="1" value="1" aria-label="페이지 번호"><span>/ <span id="pageCount">-</span></span></div>
+      <div class="pageBox"><input id="pageInput" type="number" min="1" value="1" aria-label="슬라이드 번호"><span>/ <span id="pageCount">77</span></span></div>
       <button id="nextBtn" type="button">다음 →</button>
       <a class="btn" href="assets/materials/healthcare-cs-ai-slides.pdf" download>PDF 다운로드</a>
     </div>
   </header>
   <main class="viewer">
-    <div class="canvasWrap"><canvas id="slideCanvas" class="slideCanvas" aria-label="강의 슬라이드"></canvas></div>
+    <div class="slideFrame"><img id="slideImage" class="slideImage" src="assets/slide-images/slide-001.jpg" alt="강의 슬라이드 1페이지"></div>
     <div id="loading" class="loading">슬라이드 불러오는 중…</div>
-    <div class="hint">키보드 ← → 로도 한 장씩 넘길 수 있습니다</div>
+    <div class="hint">키보드 ← → 로 한 장씩 넘길 수 있습니다</div>
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    const pdfUrl = 'assets/materials/healthcare-cs-ai-slides.pdf';
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-    const canvas = document.getElementById('slideCanvas');
-    const ctx = canvas.getContext('2d');
+    const total = 77;
+    let current = 1;
+    const img = document.getElementById('slideImage');
     const loading = document.getElementById('loading');
-    const pageInput = document.getElementById('pageInput');
-    const pageCount = document.getElementById('pageCount');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let pdfDoc = null;
-    let pageNum = 1;
-    let rendering = false;
-    let pendingPage = null;
-
-    function fitScale(viewport){
-      const maxW = Math.min(window.innerWidth - 40, 1120);
-      const maxH = window.innerHeight - document.querySelector('.bar').offsetHeight - 48;
-      return Math.min(maxW / viewport.width, maxH / viewport.height, 1.8);
+    const input = document.getElementById('pageInput');
+    const prev = document.getElementById('prevBtn');
+    const next = document.getElementById('nextBtn');
+    input.max = total;
+    function src(n){ return `assets/slide-images/slide-${String(n).padStart(3,'0')}.jpg`; }
+    function preload(n){ if(n>=1 && n<=total){ const im = new Image(); im.src = src(n); } }
+    function updateButtons(){ prev.disabled = current <= 1; next.disabled = current >= total; input.value = current; }
+    function go(n){
+      const target = Math.max(1, Math.min(total, Number(n)||1));
+      if(target === current) return;
+      current = target;
+      loading.style.display = 'block';
+      img.alt = `강의 슬라이드 ${current}페이지`;
+      img.src = src(current);
+      updateButtons();
+      preload(current+1); preload(current-1);
     }
-    async function renderPage(num){
-      if(rendering){ pendingPage = num; return; }
-      rendering = true; loading.style.display = 'block';
-      const page = await pdfDoc.getPage(num);
-      const baseViewport = page.getViewport({scale:1});
-      const scale = fitScale(baseViewport);
-      const viewport = page.getViewport({scale});
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = Math.floor(viewport.width * dpr);
-      canvas.height = Math.floor(viewport.height * dpr);
-      canvas.style.width = Math.floor(viewport.width) + 'px';
-      canvas.style.height = Math.floor(viewport.height) + 'px';
-      const transform = dpr !== 1 ? [dpr,0,0,dpr,0,0] : null;
-      await page.render({canvasContext:ctx, viewport, transform}).promise;
-      pageInput.value = num;
-      prevBtn.disabled = num <= 1;
-      nextBtn.disabled = num >= pdfDoc.numPages;
-      loading.style.display = 'none';
-      rendering = false;
-      if(pendingPage !== null){ const p = pendingPage; pendingPage = null; renderPage(p); }
-    }
-    function go(num){
-      if(!pdfDoc) return;
-      const next = Math.max(1, Math.min(pdfDoc.numPages, Number(num)||1));
-      pageNum = next; renderPage(pageNum);
-    }
-    prevBtn.addEventListener('click',()=>go(pageNum-1));
-    nextBtn.addEventListener('click',()=>go(pageNum+1));
-    pageInput.addEventListener('change',()=>go(pageInput.value));
-    window.addEventListener('keydown',(e)=>{ if(e.key==='ArrowLeft') go(pageNum-1); if(e.key==='ArrowRight') go(pageNum+1); });
-    let resizeTimer; window.addEventListener('resize',()=>{ clearTimeout(resizeTimer); resizeTimer=setTimeout(()=>renderPage(pageNum),180); });
-    pdfjsLib.getDocument(pdfUrl).promise.then((doc)=>{ pdfDoc = doc; pageCount.textContent = doc.numPages; pageInput.max = doc.numPages; renderPage(pageNum); }).catch(()=>{ loading.textContent='슬라이드를 불러오지 못했습니다. PDF 다운로드를 이용해주세요.'; });
+    img.addEventListener('load',()=>{ loading.style.display = 'none'; });
+    img.addEventListener('error',()=>{ loading.textContent = '슬라이드를 불러오지 못했습니다. PDF 다운로드를 이용해주세요.'; });
+    prev.addEventListener('click',()=>go(current-1));
+    next.addEventListener('click',()=>go(current+1));
+    input.addEventListener('change',()=>go(input.value));
+    window.addEventListener('keydown',(e)=>{ if(e.key==='ArrowLeft') go(current-1); if(e.key==='ArrowRight') go(current+1); });
+    updateButtons(); preload(2);
   </script>
 </body>
 </html>
